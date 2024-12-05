@@ -107,7 +107,8 @@ def main():
 if __name__ == "__main__":
     main()
 
-##INPUT THIS CODE INTO CUSTOMER_BANKING.py to remove blank input error (code was not used in orginal file to prevent easy mistakes)##
+##INPUT THIS CODE INTO CUSTOMER_BANKING.py to remove blank input error.##
+##(code was not used in orginal file to prevent easy mistakes)##
 
 def get_float_input(prompt, default_value=0.0):
     """Prompts the user for a float input and returns a valid float, using a default if left blank."""
