@@ -107,6 +107,25 @@ def main():
 if __name__ == "__main__":
     main()
 
+##INPUT THIS CODE INTO CUSTOMER_BANKING.py to remove blank input error##
+
+def get_float_input(prompt, default_value=0.0):
+    """Prompts the user for a float input and returns a valid float, using a default if left blank."""
+    user_input = input(prompt)
+    if user_input == "":
+        return default_value
+    else:
+        try:
+            return float(user_input)
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+            return get_float_input(prompt, default_value)
+
+    # Example usage
+balance = get_float_input("Enter balance (default 0.0): ")
+interest_rate = get_float_input("Enter interest rate (default 0.0): ")
+print(f"Balance: {balance}, Interest Rate: {interest_rate}")
+
 
 
 
