@@ -80,7 +80,7 @@ from savings_account import create_savings_account
 from cd_account import create_cd_account
 
 def main():
-    # Prompt user for savings account details
+    # Prompt for savings account details
     savings_balance = float(input("Enter the initial balance for the savings account: "))
     savings_interest = float(input("Enter the interest rate (in %) for the savings account: "))
     savings_maturity = int(input("Enter the number of months for the savings account: "))
@@ -92,7 +92,7 @@ def main():
     print(f"Savings Account Updated Balance: ${updated_savings_balance:.2f}")
     print(f"Interest Earned: ${interest_earned:.2f}")
 
-    # Prompt user for CD account details
+    # Prompt for CD account details
     cd_balance = float(input("Enter the initial balance for the CD account: "))
     cd_interest = float(input("Enter the interest rate (in %) for the CD account: "))
     cd_maturity = int(input("Enter the number of months for the CD account: "))
